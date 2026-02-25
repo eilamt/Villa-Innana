@@ -301,13 +301,14 @@ footer { background:var(--charcoal); color:var(--sand); padding:4.5rem 6vw 2.5re
     <ul class="nav-links-right">
       <li><a href="#explore">Explore</a></li>
       <li><a href="#retreats">Retreats</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#booking" class="nav-cta">Inquire</a></li>
     </ul>
     <button class="menu-toggle" onclick="document.querySelector('.mobile-nav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
   <ul class="mobile-nav">
     <li><a href="#villa">The Villa</a></li><li><a href="#land">The Land</a></li><li><a href="#stay">Your Stay</a></li>
-    <li><a href="#explore">Explore</a></li><li><a href="#retreats">Retreats</a></li><li><a href="#booking">Inquire</a></li>
+    <li><a href="#explore">Explore</a></li><li><a href="#retreats">Retreats</a></li><li><a href="#about">About</a></li><li><a href="#booking">Inquire</a></li>
   </ul>
 </nav>
 
@@ -547,13 +548,43 @@ footer { background:var(--charcoal); color:var(--sand); padding:4.5rem 6vw 2.5re
   </div>
 </section>
 
+<section id="about" class="about section-pad-lg">
+  <div style="text-align:center;margin-bottom:1.2rem" class="reveal">
+    <p class="section-eyebrow">About Us</p>
+    <h2 class="section-title">About <em>Us</em></h2>
+  </div>
+  <div class="explore-content">
+    <div class="explore-text reveal">
+      <p>We are Tamar and Eric — New Yorkers who fell in love with Costa Rica and decided to make it our second home.</p>
+      <p>Tamar is a scientist whose current work explores AI and consciousness. A lifelong learner and practitioner of embodied practices — yoga, nature immersion, dream work, and personal writing — she sees these as pathways that support the individuation process.</p>
+      <p>Eric, a native New Yorker, administers an education fund for health workers. He is also a professional Dungeon Master and a dedicated martial arts practitioner.</p>
+      <p>Together, we share a deep love of mythology and nature — two threads that led us to this land.</p>
+
+      <h3 style="margin-top:1.2rem">The Land</h3>
+      <p>The Innana land was once a coffee plantation cultivated by Julio and Digna, who sold it to us in 2024 — though they remain very much part of its story. Julio, who lives just across the street, lovingly maintains the land: the health of the trails, the vegetation, and our little fish pond. He also continues to grow coffee on a sunny portion of the property. If you walk up from the lower gate to the villa, you'll pass right through his coffee plantation. In fact, the coffee we offer our guests is grown right here on the Innana land.</p>
+
+      <h3 style="margin-top:1.2rem">Why Innana</h3>
+      <p>We named this place after the Sumerian goddess Inanna — a figure from a time when men, women, animals, nature, the seasons, and the divine were deeply intertwined. Inanna's descent to the underworld is a story about the journey to attain wisdom, and it resonates with what we believe this land offers: a deep connection with our roots and with the healing power of nature. Our intention is simple — to share with you the kind of immersion we seek for ourselves.</p>
+
+      <h3 style="margin-top:1.2rem">Retreats</h3>
+      <p>From time to time, we plan to host intimate retreats centered around embodiment, creativity, and playfulness — think yoga, martial arts, writing, dream work, nature-inspired art, and immersion hikes. If you'd like to be notified about future retreats, leave your email below.</p>
+
+      <form class="booking-form" onsubmit="event.preventDefault();this.innerHTML='<p style=\'font-family:var(--font-display);font-size:1.05rem;color:var(--earth);padding:1rem\'>Thanks — we will notify you about future retreats.</p>'">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit" class="btn btn-gold" style="width:160px">Notify Me</button>
+      </form>
+    </div>
+    <img src="images/eric-tamar.png" alt="Tamar and Eric" class="explore-img reveal" style="max-width:540px;border-radius:6px;">
+  </div>
+</section>
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
       <a href="#" class="footer-logo">Villa <span>Innana</span></a>
       <p>A private nature sanctuary in Costa Rica's Chirripó Valley. Named for the ancient Sumerian goddess of heaven and earth — she who descended and returned transformed.</p>
     </div>
-    <div class="footer-col"><h4>Explore</h4><a href="#villa">The Villa</a><a href="#land">The Land</a><a href="#stay">Your Stay</a><a href="#explore">Chirripó Valley</a><a href="#retreats">Retreats</a><a href="#gallery">Gallery</a></div>
+    <div class="footer-col"><h4>Explore</h4><a href="#villa">The Villa</a><a href="#land">The Land</a><a href="#stay">Your Stay</a><a href="#explore">Chirripó Valley</a><a href="#retreats">Retreats</a><a href="#about">About</a><a href="#gallery">Gallery</a></div>
     <div class="footer-col"><h4>Contact</h4><a href="mailto:hello@villainnana.com">hello@villainnana.com</a><a href="#booking">Inquire About Dates</a><a href="#">Instagram</a></div>
   </div>
   <div class="footer-bottom">
